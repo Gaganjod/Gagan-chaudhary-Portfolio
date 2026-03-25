@@ -48,6 +48,13 @@ export const PROJECTS_DATA = [
     tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript'], 
     github: 'https://github.com/Gaganjod/spotify-clone-html-css-js',
     live: '#' 
+  },
+  {
+    title: 'Medicare',
+    description: 'A medical emergency application designed for continuous health tracking and rapid ambulance service requests. It also features a powerful integrated AI disease identifier to assist with immediate medical assessments.',
+    tech: ['AI Integration', 'JavaScript', 'Health Tech'],
+    github: 'https://github.com/Gaganjod/Medical_Export.git',
+    live: '#'
   }
 ];
 
