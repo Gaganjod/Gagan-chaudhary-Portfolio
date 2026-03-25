@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HERO_DATA } from '../data';
-import { Code2, Terminal, Database } from 'lucide-react';
+import { Code2, Terminal, Database, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -29,12 +29,15 @@ const Hero = () => {
             <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-xl">
               {HERO_DATA.description}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-8">
               <a href="#contact" className="px-6 py-3 sm:px-8 sm:py-3 rounded-full bg-primary/10 text-primary border border-primary/50 hover:bg-primary hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(74,222,128,0.3)] hover:shadow-[0_0_25px_rgba(74,222,128,0.5)] font-medium">
                 Contact Me
               </a>
               <a href="#projects" className="px-6 py-3 sm:px-8 sm:py-3 rounded-full bg-transparent text-white border border-white/20 hover:border-white/60 transition-all duration-300 font-medium">
                 View Work
+              </a>
+              <a href="/gagan-cv.pdf" download="Gagan_Chaudhary_CV.pdf" className="px-6 py-3 sm:px-8 sm:py-3 rounded-full bg-transparent text-white border border-white/20 hover:text-primary hover:border-primary/50 transition-all duration-300 font-medium flex items-center gap-2">
+                <Download size={18} /> Download CV
               </a>
             </div>
           </motion.div>

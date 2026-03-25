@@ -46,7 +46,7 @@ export const PROJECTS_DATA = [
     title: 'Spotify Clone',
     description: 'A fully responsive Spotify-style music player. Implemented custom audio player features such as play/pause, next/previous track, seek bar control, and real-time progress updates using JavaScript Audio API. Designed a modern interface with Flexbox, Grid, transitions, and animations.',
     tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript'], 
-    github: 'https://github.com/Gaganjod',
+    github: 'https://github.com/Gaganjod/spotify-clone-html-css-js',
     live: '#' 
   }
 ];
