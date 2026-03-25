@@ -1,4 +1,4 @@
-export const NAV_LINKS = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+export const NAV_LINKS = ['Home', 'About', 'Skills', 'Projects', 'Certificates', 'Contact'];
 
 export const HERO_DATA = {
   greeting: 'Hi, I\'m Gagan',
@@ -57,3 +57,10 @@ export const CONTACT_DATA = {
   github: 'https://github.com/Gaganjod',
   linkedin: 'https://www.linkedin.com/in/gagan---/'
 };
+
+export const CERTIFICATES_DATA = [
+  { title: "Ciphers School C++ & DSA", image: "/certificate/Screenshot 2026-03-26 000847.png" },
+  { title: "FreeCodeCamp Responsive Web Design", image: "/certificate/Screenshot 2026-03-26 000909.png" },
+  { title: "NPTEL Cloud Computing", image: "/certificate/Screenshot 2026-03-26 000928.png" },
+  { title: "Infosys Springboard", image: "/certificate/Screenshot 2026-03-26 000950.png" }
+];
