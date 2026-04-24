@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+.github
+npm-debug.log
+yarn-error.log
+temp-app
+build_err.txt
+gagan Cv (1).pdf
+extract-cv.cjs
