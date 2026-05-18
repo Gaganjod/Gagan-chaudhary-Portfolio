@@ -10,9 +10,9 @@ export const HERO_DATA = {
 export const ABOUT_DATA = {
   intro: 'I am a passionate software developer with strong fundamentals in C++, JavaScript, and full-stack web technologies. I enjoy solving algorithmic challenges and recently completed a Software Engineering Internship at Vyloo Technologies, where I contributed to real-time development modules and backend logic.',
   education: [
-    { degree: 'B.Tech in Computer Science and Engineering', institution: 'Lovely Professional University (Punjab, India)', year: 'Aug 2023 - Present (CGPA: 6.34)' },
-    { degree: 'Intermediate (72.80%)', institution: 'St. Paul\'s Sr. Secondary School (Mathura, UP)', year: 'Apr 2021 - Mar 2022' },
-    { degree: 'Matriculation (79.00%)', institution: 'St. Paul\'s Sr. Secondary School (Mathura, UP)', year: 'Apr 2019 - Mar 2020' }
+    { degree: 'B.Tech in Computer Science and Engineering', institution: 'Lovely Professional University (Punjab, India)', year: 'Aug 2023 - Present (CGPA: 6.75)' },
+    { degree: 'Intermediate', institution: 'St. Paul\'s Sr. Secondary School (Mathura, UP)', year: 'Apr 2021 - Mar 2022' },
+    { degree: 'Matriculation', institution: 'St. Paul\'s Sr. Secondary School (Mathura, UP)', year: 'Apr 2019 - Mar 2020' }
   ],
   experience: [
     {
@@ -43,16 +43,18 @@ export const SKILLS_DATA = [
 
 export const PROJECTS_DATA = [
   { 
-    title: 'Spotify Clone',
-    description: 'A fully responsive Spotify-style music player. Implemented custom audio player features such as play/pause, next/previous track, seek bar control, and real-time progress updates using JavaScript Audio API. Designed a modern interface with Flexbox, Grid, transitions, and animations.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript'], 
-    github: 'https://github.com/Gaganjod/spotify-clone-html-css-js',
-    live: '#' 
+    title: 'OptiCV — AI Resume Intelligence Dashboard',
+    description: 'Developed a Full-Stack AI Optimizer using Gemini API for semantic gap analysis and automated resume content improvement. Engineered a premium Bento-style Dashboard with a Side-by-Side Comparison Mode to highlight real-time AI suggestions. Implemented a Parsing Preview feature to validate document structure and ensure 100% compatibility with legacy ATS systems.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'Gemini API', 'Tailwind CSS', 'Recharts', 'Framer Motion', 'TypeScript'], 
+    image: '/projects/opticv.png',
+    github: '#',
+    live: 'https://opti-cv-three.vercel.app/' 
   },
   {
     title: 'Medicare',
     description: 'A medical emergency application designed for continuous health tracking and rapid ambulance service requests. It also features a powerful integrated AI disease identifier to assist with immediate medical assessments.',
     tech: ['AI Integration', 'JavaScript', 'Health Tech'],
+    image: '/projects/medicare.png',
     github: 'https://github.com/Gaganjod/Medical_Export.git',
     live: '#'
   }

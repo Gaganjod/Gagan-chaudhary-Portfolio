@@ -1,14 +1,79 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-primary: #4ade80;
-  --color-secondary: #2dd4bf;
-  --font-sans: 'Inter', sans-serif;
+  --color-primary: #222222;
+  --color-secondary: #7B7B7B;
+  --color-tertiary: #F8F8F8;
+  --color-background: #FFFFFF;
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+  
+  --radius-3xl: 2rem;
+  --radius-4xl: 3rem;
 }
 
 @layer base {
   body {
-    @apply bg-background text-zinc-300 antialiased selection:bg-primary/20 selection:text-primary;
+    @apply bg-background text-primary antialiased selection:bg-primary selection:text-white;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-reveal {
+    @apply overflow-hidden inline-block;
+  }
+  
+  .perspective-2000 {
+    perspective: 2000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .spotlight-card {
+    position: relative;
+  }
+  
+  .spotlight-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(34, 34, 34, 0.03),
+      transparent 40%
+    );
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .spotlight-card:hover::before {
+    opacity: 1;
+  }
+
+  .glass-pro {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(123, 123, 123, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+@keyframes float-pro {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+.animate-float-pro {
+  animation: float-pro 6s ease-in-out infinite;
 }
